@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.MainFragment">
+
+        <GridLayout
+            android:id="@+id/grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignBounds"
+            android:layout_marginTop="10dp"
+            android:columnCount="4"
+            android:rowOrderPreserved="true"
+            android:useDefaultMargins="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:text="@string/head_til_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:text="@string/head_til_2"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+
+                android:text="@string/head_til_3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_columnWeight="1"
+                android:text="@string/head_til_4"
+
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <include
+            android:id="@+id/ads"
+            layout="@layout/item_ads" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/best_practice_definition_meaning"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/btn_shop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_shop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_btn"
+            android:text="@string/shop"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ads" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_shop"
+            tools:listitem="@layout/ite_category" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/best_titles"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleView_category" />
+
+        <GridLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:columnCount="3"
+            android:useDefaultMargins="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title2">
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp" />
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp" />
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:columnCount="3"
+
+            android:useDefaultMargins="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row1">
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp" />
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp" />
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:columnCount="3"
+
+            android:useDefaultMargins="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row2">
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp" />
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp" />
+
+            <include
+                layout="@layout/item_body_image"
+                android:layout_width="110dp"
+
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+        </GridLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/top_titles"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row3" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_profiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title3"
+            tools:listitem="@layout/item_profile" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/shop_by_category"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleView_profiles" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/view_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleView_profiles" />
+
+        <include
+            android:id="@+id/subcategory_section"
+            layout="@layout/subcategory_section" />
+
+
+        <include android:id="@+id/footer" layout="@layout/footer" />
+
+        <include layout="@layout/under_footer" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

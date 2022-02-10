@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Dubai task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="head_til_1">Head Til 1</string>
+    <string name="head_til_2">Head Til 2</string>
+    <string name="head_til_3">Head Til 3</string>
+    <string name="head_til_4">Head Til 4</string>
+    <string name="_50_off">50% Off</string>
+    <string name="aed_300">AED 300/-</string>
+    <string name="best_practice_definition_meaning"><![CDATA[Best practice Definition & Meaning]]></string>
+    <string name="shop">Shop</string>
+    <string name="main_category">Main Category</string>
+    <string name="best_titles">#BEST TITLES</string>
+    <string name="_00">00%</string>
+    <string name="_00_00">00.00/</string>
+    <string name="product_service_title_product">Product Service Title Product</string>
+    <string name="_3_km">3 Km</string>
+    <string name="top_titles">#TOP TITLES</string>
+    <string name="user1">\@user1</string>
+    <string name="shop_by_category">#SHOP BY CATEGORY</string>
+    <string name="view_all">View All</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="project_by">PROJECT BY</string>
+    <string name="ezeness_technology">EZENESS TECHNOLOGY</string>
+    <string name="search">Search</string>
+    <string name="u_sell_nup">U SELL\nUP</string>
+</resources>
